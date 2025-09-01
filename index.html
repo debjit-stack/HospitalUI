@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Health Group - Compassionate Care, Advanced Medicine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white shadow-md fixed w-full z-50 top-0 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">
+                <i class="fas fa-hospital-user mr-2"></i>Unity Health
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#doctors" class="nav-link">Our Doctors</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-block px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-sm hover:bg-blue-600 transition duration-300">Appointment</a>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#home" class="block py-2 px-6 text-sm nav-link">Home</a>
+            <a href="#services" class="block py-2 px-6 text-sm nav-link">Services</a>
+            <a href="#doctors" class="block py-2 px-6 text-sm nav-link">Our Doctors</a>
+            <a href="#about" class="block py-2 px-6 text-sm nav-link">About Us</a>
+            <a href="#contact" class="block py-2 px-6 text-sm nav-link">Contact</a>
+            <a href="#contact" class="block py-3 px-6 text-sm bg-blue-500 text-white text-center font-semibold">Book Appointment</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white pt-32 pb-24 md:pt-48 md:pb-40">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 animate-fade-in-down">Your Health, Our Priority</h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto animate-fade-in-up">Providing comprehensive and compassionate healthcare with state-of-the-art technology and a team of dedicated experts.</p>
+                <a href="#contact" class="cta-button text-lg">Book an Appointment</a>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Why Choose Unity Health?</h2>
+                <p class="section-subtitle mb-12">We are committed to delivering the highest quality of care and ensuring your well-being.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-blue-500 text-5xl mb-4"><i class="fas fa-user-md"></i></div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Expert Doctors</h3>
+                        <p class="text-gray-600">Our team consists of highly skilled and experienced medical professionals across various specializations.</p>
+                    </div>
+                    <div class="text-center p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-blue-500 text-5xl mb-4"><i class="fas fa-pills"></i></div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Advanced Technology</h3>
+                        <p class="text-gray-600">We utilize the latest medical technology for accurate diagnosis and effective treatments.</p>
+                    </div>
+                    <div class="text-center p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-blue-500 text-5xl mb-4"><i class="fas fa-ambulance"></i></div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">24/7 Emergency Care</h3>
+                        <p class="text-gray-600">Our emergency department is always ready to provide immediate medical attention.</p>
+                    </div>
+                     <div class="text-center p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-blue-500 text-5xl mb-4"><i class="fas fa-heartbeat"></i></div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Patient-Centric Approach</h3>
+                        <p class="text-gray-600">Your comfort and care are at the core of everything we do. We treat you like family.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Medical Services</h2>
+                <p class="section-subtitle mb-12">A wide range of specialty services to meet all your healthcare needs.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-card">
+                        <img src="https://placehold.co/600x400/BFDBFE/1E3A8A?text=Cardiology" alt="Cardiology" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Cardiology</h3>
+                            <p class="text-gray-600">Expert care for heart conditions, including diagnosis, treatment, and prevention of cardiovascular diseases.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://placehold.co/600x400/C7D2FE/1E40AF?text=Neurology" alt="Neurology" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Neurology</h3>
+                            <p class="text-gray-600">Comprehensive care for disorders of the nervous system, including the brain, spinal cord, and nerves.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://placehold.co/600x400/E0E7FF/3730A3?text=Orthopedics" alt="Orthopedics" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Orthopedics</h3>
+                            <p class="text-gray-600">Specialized treatment for injuries and diseases of the musculoskeletal system.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://placehold.co/600x400/DBEAFE/1D4ED8?text=Pediatrics" alt="Pediatrics" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Pediatrics</h3>
+                            <p class="text-gray-600">Dedicated medical care for infants, children, and adolescents to ensure a healthy future.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://placehold.co/600x400/BFDBFE/1E3A8A?text=Oncology" alt="Oncology" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Oncology</h3>
+                            <p class="text-gray-600">Advanced and compassionate cancer care, from diagnosis and treatment to support services.</p>
+                        </div>
+                    </div>
+                     <div class="service-card">
+                        <img src="https://placehold.co/600x400/C7D2FE/1E40AF?text=General+Surgery" alt="General Surgery" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">General Surgery</h3>
+                            <p class="text-gray-600">A wide range of surgical procedures performed by our highly skilled surgical team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Meet Our Doctors Section -->
+        <section id="doctors" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Meet Our Expert Doctors</h2>
+                <p class="section-subtitle mb-12">A team of dedicated professionals committed to your health.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="doctor-card">
+                        <img src="https://placehold.co/200x200/BFDBFE/1E3A8A?text=Dr.+Roy" alt="Doctor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Emily Roy</h3>
+                        <p class="text-blue-500 font-semibold">Cardiologist</p>
+                        <p class="text-gray-600 mt-2">Dr. Roy is a leading expert in cardiac care with over 15 years of experience in treating heart conditions.</p>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="https://placehold.co/200x200/C7D2FE/1E40AF?text=Dr.+Patel" alt="Doctor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Arjun Patel</h3>
+                        <p class="text-blue-500 font-semibold">Neurologist</p>
+                        <p class="text-gray-600 mt-2">Dr. Patel specializes in complex neurological disorders and is dedicated to innovative treatments.</p>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="https://placehold.co/200x200/E0E7FF/3730A3?text=Dr.+Chen" alt="Doctor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Li Chen</h3>
+                        <p class="text-blue-500 font-semibold">Orthopedic Surgeon</p>
+                        <p class="text-gray-600 mt-2">Dr. Chen is renowned for her expertise in joint replacement and sports medicine.</p>
+                    </div>
+                    <div class="doctor-card">
+                        <img src="https://placehold.co/200x200/DBEAFE/1D4ED8?text=Dr.+Sharma" alt="Doctor" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-blue-200">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Anika Sharma</h3>
+                        <p class="text-blue-500 font-semibold">Pediatrician</p>
+                        <p class="text-gray-600 mt-2">With a warm and friendly approach, Dr. Sharma provides exceptional care for children.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20">
+             <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/E0E7FF/333333?text=Our+Hospital+Building" class="rounded-lg shadow-2xl" alt="Hospital Building">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Unity Health Group</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Founded in 1995, Unity Health has grown from a small community clinic to a leading multi-specialty hospital in the region. Our mission is to provide accessible, affordable, and high-quality healthcare to all.
+                    </p>
+                     <p class="text-gray-600 leading-relaxed">
+                        We believe in a holistic approach to medicine, combining advanced medical treatments with compassionate, patient-focused care. Our dedicated staff works tirelessly to create a healing environment where patients feel safe, respected, and well-cared for.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle mb-12">We are here to help you. Schedule an appointment or ask any questions you may have.</p>
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col md:flex-row gap-10">
+                    <!-- Form -->
+                    <div class="w-full md:w-1/2">
+                        <form id="contact-form">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                             <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full cta-button">Send Message</button>
+                             <div id="form-message" class="mt-4 text-center"></div>
+                        </form>
+                    </div>
+                    <!-- Info & Map -->
+                    <div class="w-full md:w-1/2">
+                       <div class="mb-6">
+                           <h3 class="text-xl font-semibold text-gray-800 mb-3">Contact Information</h3>
+                           <p class="text-gray-600 mb-2 flex items-center"><i class="fas fa-map-marker-alt mr-3 text-blue-500"></i>123 Health Ave, Medicity, 12345, India</p>
+                           <p class="text-gray-600 mb-2 flex items-center"><i class="fas fa-phone mr-3 text-blue-500"></i>+91 123 456 7890</p>
+                           <p class="text-gray-600 mb-2 flex items-center"><i class="fas fa-envelope mr-3 text-blue-500"></i>contact@unityhealth.com</p>
+                       </div>
+                        <div class="h-80 rounded-lg overflow-hidden">
+                           <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d3506.223727581729!2d77.2182202150893!3d28.50293428246961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1e441333333%3A0x2478a57320a671f!2sMax%20Healthcare!5e0!3m2!1sen!2sin!4v1661872927282!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Unity Health</h3>
+                    <p class="text-gray-400">Your trusted partner in health and wellness. Committed to providing exceptional medical care.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#doctors" class="text-gray-400 hover:text-white">Doctors</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                         <li><a href="#services" class="text-gray-400 hover:text-white">Cardiology</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Neurology</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Orthopedics</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Pediatrics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+             <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Unity Health Group. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
